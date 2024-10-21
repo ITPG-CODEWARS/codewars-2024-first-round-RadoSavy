@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Любителски Уебсайт за Влакове</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Нов стил за бутона */
+        .btn-flat {
+            background-color: transparent; /* Прозрачен фон */
+            border: none; /* Без граница */
+            color: #fff; /* Цвета на текста */
+            padding: 0; /* Без допълнителна вътрешна линия */
+            font-size: 1rem; /* Размер на шрифта */
+            cursor: pointer; /* Показва курсора на ръка */
+        }
+
+        .btn-flat:hover {
+            text-decoration: underline; /* Подчертаване при задържане */
+        }
+
+        /* Стил за иконата на знамето */
+        .flag-icon {
+            width: 20px; /* Ширина на иконата */
+            height: auto; /* Автоматична височина */
+            margin-right: 5px; /* Разстояние между знамето и текста */
+        }
+
+        /* Допълнителен стил за navbar */
+        .bg-dark-red {
+            background-color: #b22222; /* Плътно червен фон */
+            transition: background-color 0.3s, padding 0.3s; /* Преходи при скрол */
+        }
+
+        /* Стил за логото */
+        .logo {
+            width: 150px; /* Размер на ширината на логото */
+            height: auto; /* Автоматична височина, за да запази пропорциите */
+            transition: width 0.3s; /* Преход за логото */
+        }
+
+        /* Стил за хедъра */
+        .hero {
+            position: relative;
+            height: 300px; /* Височина на хедъра */
+            overflow: hidden; /* Скриване на излишъка */
+            z-index: 1; /* Задание на z-index за подредба */
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0; /* Позиционира снимката най-отгоре */
+            left: 50%;
+            transform: translateX(-50%); /* Центриране на снимката */
+            width: 100%; /* Ширина на снимката 100% от контейнера */
+            height: auto; /* Автоматична височина, за да запази пропорциите */
+            transition: transform 0.3s; /* Преход за смаляване на снимката */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигационна лента -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-red fixed-top">
+        <a class="navbar-brand" href="index.html">
+            Влаковете около света
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> <span class="nav-text" data-bg="Начало" data-en="Home">Начало</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trains.html"><i class="fas fa-train"></i> <span class="nav-text" data-bg="Влакове" data-en="Trains">Влакове</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-blog"></i> <span class="nav-text" data-bg="Блог" data-en="Blog">Блог</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-envelope"></i> <span class="nav-text" data-bg="Контакти" data-en="Contacts">Контакти</span></a>
+                </li>
+                <li class="nav-item">
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Главна секция -->
+    <header class="hero">
+        <div class="container text-center">
+            <h1><span class="hero-text" data-bg="Добре дошли в света на влаковете!" data-en="Welcome to the world of trains!">Добре дошли в света на влаковете!</span></h1>
+            <p><span class="hero-text" data-bg="Открийте повече за любимите си влакове" data-en="Discover more about your favorite trains">Открийте повече за любимите си влакове</span></p>
+        </div>
+    </header>
+
+    <!-- Секция с новини за влакове -->
+    <section class="latest-trains">
+        <div class="container">
+            <h2 class="text-center"><span class="latest-trains-text" data-bg="Най-новите влакове" data-en="Latest Trains">Най-новите влакове</span></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/train1.jpg" class="card-img-top" alt="Влак 1">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="card-title-text" data-bg="Влак 1" data-en="Train 1">Влак 1</span></h5>
+                            <p class="card-text"><span class="card-text" data-bg="Този влак е символ на модерните технологии и е известен с високата си скорост." data-en="This train symbolizes modern technologies and is known for its high speed.">Този влак е символ на модерните технологии и е известен с високата си скорост.</span></p>
+                            <a href="trains.html" class="btn btn-dark-red btn-block">ПОВЕЧЕ ИНФОРМАЦИЯ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/train2.jpg" class="card-img-top" alt="Влак 2">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="card-title-text" data-bg="Влак 2" data-en="Train 2">Влак 2</span></h5>
+                            <p class="card-text"><span class="card-text" data-bg="Уникален с дизайн и удобство, този влак е предпочитан за дълги разстояния." data-en="Unique in design and comfort, this train is preferred for long distances.">Уникален с дизайн и удобство, този влак е предпочитан за дълги разстояния.</span></p>
+                            <a href="trains.html" class="btn btn-dark-red btn-block">ПОВЕЧЕ ИНФОРМАЦИЯ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/train3.jpg" class="card-img-top" alt="Влак 3">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="card-title-text" data-bg="Влак 3" data-en="Train 3">Влак 3</span></h5>
+                            <p class="card-text"><span class="card-text" data-bg="С класическия си вид, този влак предлага ретро стил и комфорт." data-en="With its classic look, this train offers retro style and comfort.">С класическия си вид, този влак предлага ретро стил и комфорт.</span></p>
+                            <a href="trains.html" class="btn btn-dark-red btn-block">ПОВЕЧЕ ИНФОРМАЦИЯ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
