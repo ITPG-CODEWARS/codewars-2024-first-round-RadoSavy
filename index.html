@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Любителски Уебсайт за Влакове</title>
+    <title>Влаковете около света</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -35,13 +35,6 @@
             transition: background-color 0.3s, padding 0.3s; /* Преходи при скрол */
         }
 
-        /* Стил за логото */
-        .logo {
-            width: 150px; /* Размер на ширината на логото */
-            height: auto; /* Автоматична височина, за да запази пропорциите */
-            transition: width 0.3s; /* Преход за логото */
-        }
-
         /* Стил за хедъра */
         .hero {
             position: relative;
@@ -57,7 +50,15 @@
             transform: translateX(-50%); /* Центриране на снимката */
             width: 100%; /* Ширина на снимката 100% от контейнера */
             height: auto; /* Автоматична височина, за да запази пропорциите */
-            transition: transform 0.3s; /* Преход за смаляване на снимката */
+            z-index: 0; /* Задание на z-index на снимката */
+        }
+
+        .hero .content {
+            position: relative; /* Позициониране на съдържанието относително */
+            z-index: 1; /* Показване на съдържанието над снимката */
+            text-align: center; /* Центриране на текста */
+            color: white; /* Цвета на текста */
+            padding: 20px; /* Отстъп около текста */
         }
     </style>
 </head>
@@ -74,16 +75,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> <span class="nav-text" data-bg="Начало" data-en="Home">Начало</span></a>
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> <span class="nav-text">Начало</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="trains.html"><i class="fas fa-train"></i> <span class="nav-text" data-bg="Влакове" data-en="Trains">Влакове</span></a>
+                    <a class="nav-link" href="trains.html"><i class="fas fa-train"></i> <span class="nav-text">Влакове</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-blog"></i> <span class="nav-text" data-bg="Блог" data-en="Blog">Блог</span></a>
+                    <a class="nav-link" href="#"><i class="fas fa-blog"></i> <span class="nav-text">Блог</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-envelope"></i> <span class="nav-text" data-bg="Контакти" data-en="Contacts">Контакти</span></a>
+                    <a class="nav-link" href="#"><i class="fas fa-envelope"></i> <span class="nav-text">Контакти</span></a>
                 </li>
                 <li class="nav-item">
                 </li>
@@ -93,9 +94,10 @@
 
     <!-- Главна секция -->
     <header class="hero">
-        <div class="container text-center">
-            <h1><span class="hero-text" data-bg="Добре дошли в света на влаковете!" data-en="Welcome to the world of trains!">Добре дошли в света на влаковете!</span></h1>
-            <p><span class="hero-text" data-bg="Открийте повече за любимите си влакове" data-en="Discover more about your favorite trains">Открийте повече за любимите си влакове</span></p>
+        <img src="Desiro_on_the_Sofia-Lakatnik_line,_14_February_2012.jpg" alt="Влак" class="img-fluid"> <!-- Добавяне на снимка на влак -->
+        <div class="content">
+            <h1>Добре дошли в света на влаковете!</h1>
+            <p>Открийте повече за българските и световните влакове</p>
         </div>
     </header>
 
