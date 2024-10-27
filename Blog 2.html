@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модерни високоскоростни влакове</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Основен стил за страницата */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .hero {
+            background-color: #b22222;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Lexend', sans-serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Стил за съдържанието */
+        .content-section {
+            padding: 40px 0;
+        }
+
+        .content-section h2 {
+            font-family: 'Lexend', sans-serif;
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .train-card {
+            margin-bottom: 30px;
+        }
+
+        .train-card img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .train-card h5 {
+            font-family: 'Lexend', sans-serif;
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+
+        .train-card p {
+            font-size: 1.1rem;
+        }
+
+        .train-description {
+            margin-top: 30px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .navbar-dark.bg-dark-red {
+            background-color: #b22222;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигационна лента -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-red fixed-top">
+        <a class="navbar-brand" href="index.html">
+            Влаковете около света
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> <span class="nav-text">Начало</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trains.html"><i class="fas fa-train"></i> <span class="nav-text">Влакове</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html"><i class="fas fa-blog"></i> <span class="nav-text">Блог</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacts.html"><i class="fas fa-envelope"></i> <span class="nav-text">Контакти</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Секция с описание на високоскоростните влакове -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Какво представляват високоскоростните влакове?</h2>
+            <div class="train-description">
+                <p>Високоскоростните влакове са железопътни превозни средства, които развиват скорости над 250 км/ч. Те са известни с иновации в инженерството и дизайна, предлагайки комфорт и безопасност на пътниците. Модерните технологии като магнитна левитация и усъвършенствани двигатели позволяват на тези влакове да постигнат невероятни скорости, превръщайки пътуването във вълнуващо и ефективно преживяване.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция с карти за различни високоскоростни влакове -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Популярни високоскоростни влакове</h2>
+            <div class="row">
+                <!-- Влак 1 -->
+                <div class="col-md-4">
+                    <div class="train-card">
+                        <img src="bullet train.jpg" alt="Bullet Train">
+                        <h5>Bullet Train (Япония)</h5>
+                        <p>Японският влак Shinkansen е световноизвестен с бързината и прецизността си. Той може да достигне скорости от 320 км/ч.</p>
+                    </div>
+                </div>
+                <!-- Влак 2 -->
+                <div class="col-md-4">
+                    <div class="train-card">
+                        <img src="TGV.jpg" alt="TGV Train">
+                        <h5>TGV (Франция)</h5>
+                        <p>TGV е емблематичният френски високоскоростен влак, който развива до 320 км/ч и е известен с комфорта си.</p>
+                    </div>
+                </div>
+                <!-- Влак 3 -->
+                <div class="col-md-4">
+                    <div class="train-card">
+                        <img src="Maglev.jpg" alt="Maglev Train">
+                        <h5>Maglev (Китай)</h5>
+                        <p>Маглев влакът в Китай използва магнитна левитация, за да достигне скорости над 430 км/ч, превръщайки го в най-бързия влак в света.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
