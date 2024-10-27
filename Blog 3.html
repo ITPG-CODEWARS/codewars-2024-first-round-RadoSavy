@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бъдещето на железопътния транспорт</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Основен стил за страницата */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .hero {
+            background-color: #b22222;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Lexend', sans-serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Стил за съдържанието */
+        .content-section {
+            padding: 40px 0;
+        }
+
+        .content-section h2 {
+            font-family: 'Lexend', sans-serif;
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .train-card {
+            margin-bottom: 30px;
+        }
+
+        .train-card img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .train-card h5 {
+            font-family: 'Lexend', sans-serif;
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+
+        .train-card p {
+            font-size: 1.1rem;
+        }
+
+        .train-description {
+            margin-top: 30px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .navbar-dark.bg-dark-green {
+            background-color: #b22222;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-nav .nav-item .nav-text {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигационна лента -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green fixed-top">
+        <a class="navbar-brand" href="index.html">
+            Влаковете около света
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"> <i class="fas fa-home"></i> <span class="nav-text">Начало</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trains.html"> <i class="fas fa-train"></i>  <span class="nav-text">Влакове</span> </a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="blog.html"> <i class="fas fa-blog"></i>  <span class="nav-text">Блог</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacts.html"> <i class="fas fa-envelope"></i>  <span class="nav-text">Контакти</span> </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Секция с описание за бъдещето на железопътния транспорт -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Бъдещето на железопътния транспорт</h2>
+            <div class="train-description">
+                <p>Железопътният транспорт е в процес на динамични промени, подтиквани от новите технологии и глобалната тенденция към устойчиво развитие. Очаква се в бъдеще влаковете да бъдат още по-бързи, по-екологични и по-интелигентни. Иновации като автономни влакове, маглев технологии и зелени енергийни източници ще трансформират железопътния транспорт, предлагайки по-безопасно и ефективно пътуване. Интеграцията с други транспортни системи и градски мрежи ще направи влаковете основен елемент на бъдещата инфраструктура.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция с примери за иновативни технологии -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Иновативни технологии в бъдещето на железопътния транспорт</h2>
+            <div class="row">
+                <!-- Пример 1 -->
+                <div class="col-md-4">
+                    <div class="train-card">
+                        <img src="avtonomen vlak.jpg" alt="Autonomous Train">
+                        <h5>Автономни влакове</h5>
+                        <p>Автономните влакове вече са в тестова фаза и се очаква да се превърнат в стандарт. Те ще намалят човешките грешки и ще подобрят ефективността.</p>
+                    </div>
+                </div>
+                <!-- Пример 2 -->
+                <div class="col-md-4">
+                    <div class="train-card">
+                        <img src="hyperloop.jpeg" alt="Hyperloop Train">
+                        <h5>Hyperloop</h5>
+                        <p>Технологията Hyperloop предлага нов метод за високоскоростно придвижване, използващ вакуумни тръби и капсули, достигащи невероятни скорости.</p>
+                    </div>
+                </div>
+                <!-- Пример 3 -->
+                <div class="col-md-4">
+                    <div class="train-card">
+                        <img src="vlakove s zelena energia.webp" alt="Green Energy Train">
+                        <h5>Влакове с зелена енергия</h5>
+                        <p>Влаковете на бъдещето ще използват зелена енергия като слънчева и вятърна, за да намалят емисиите и да допринесат за устойчив транспорт.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
