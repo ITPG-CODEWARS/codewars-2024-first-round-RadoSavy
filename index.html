@@ -10,55 +10,55 @@
     <style>
         /* Нов стил за бутона */
         .btn-flat {
-            background-color: transparent; /* Прозрачен фон */
-            border: none; /* Без граница */
-            color: #fff; /* Цвета на текста */
-            padding: 0; /* Без допълнителна вътрешна линия */
-            font-size: 1rem; /* Размер на шрифта */
-            cursor: pointer; /* Показва курсора на ръка */
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            padding: 0;
+            font-size: 1rem;
+            cursor: pointer;
         }
 
         .btn-flat:hover {
-            text-decoration: underline; /* Подчертаване при задържане */
+            text-decoration: underline;
         }
 
         /* Стил за иконата на знамето */
         .flag-icon {
-            width: 20px; /* Ширина на иконата */
-            height: auto; /* Автоматична височина */
-            margin-right: 5px; /* Разстояние между знамето и текста */
+            width: 20px;
+            height: auto;
+            margin-right: 5px;
         }
 
         /* Допълнителен стил за navbar */
         .bg-dark-red {
-            background-color: #b22222; /* Плътно червен фон */
-            transition: background-color 0.3s, padding 0.3s; /* Преходи при скрол */
+            background-color: #b22222;
+            transition: background-color 0.3s, padding 0.3s;
         }
 
         /* Стил за хедъра */
         .hero {
             position: relative;
-            height: 300px; /* Височина на хедъра */
-            overflow: hidden; /* Скриване на излишъка */
-            z-index: 1; /* Задание на z-index за подредба */
+            height: 300px;
+            overflow: hidden;
+            z-index: 1;
         }
 
         .hero img {
             position: absolute;
-            top: 0; /* Позиционира снимката най-отгоре */
+            top: 0;
             left: 50%;
-            transform: translateX(-50%); /* Центриране на снимката */
-            width: 100%; /* Ширина на снимката 100% от контейнера */
-            height: auto; /* Автоматична височина, за да запази пропорциите */
-            z-index: 0; /* Задание на z-index на снимката */
+            transform: translateX(-50%);
+            width: 100%;
+            height: auto;
+            z-index: 0;
         }
 
         .hero .content {
-            position: relative; /* Позициониране на съдържанието относително */
-            z-index: 1; /* Показване на съдържанието над снимката */
-            text-align: center; /* Центриране на текста */
-            color: white; /* Цвета на текста */
-            padding: 20px; /* Отстъп около текста */
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding: 20px;
         }
     </style>
 </head>
@@ -86,15 +86,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="Contacts.html"><i class="fas fa-envelope"></i> <span class="nav-text">Контакти</span></a>
                 </li>
-                <li class="nav-item">
-                </li>
             </ul>
         </div>
     </nav>
 
     <!-- Главна секция -->
     <header class="hero">
-        <img src="Desiro_on_the_Sofia-Lakatnik_line,_14_February_2012.jpg" alt="Влак" class="img-fluid"> <!-- Добавяне на снимка на влак -->
+        <img src="Desiro_on_the_Sofia-Lakatnik_line,_14_February_2012.jpg" alt="Влак" class="img-fluid">
         <div class="content">
             <h1>Добре дошли в света на влаковете!</h1>
             <p>Открийте повече за българските и световните влакове</p>
@@ -111,7 +109,7 @@
                         <img src="tesnolineika.jpg" class="card-img-top" alt="Влак 1">
                         <div class="card-body">
                             <h5 class="card-title"><span class="card-title-text">Теснолинейката Септември-Добринище</span></h5>
-                            <p class="card-text"><span class="card-text" >Теснолинейката Септември-Добринище е известна железопътна линия в България, свързваща градовете Септември и Добринище. Тя е известна със своите красиви пейзажи и историческа значимост.</span></p>
+                            <p class="card-text">Теснолинейката Септември-Добринище е известна железопътна линия, свързваща градовете Септември и Добринище. </p>
                             <a href="Train 1.html" class="btn btn-dark-red btn-block">ПОВЕЧЕ ИНФОРМАЦИЯ</a>
                         </div>
                     </div>
@@ -121,7 +119,7 @@
                         <img src="Orient Express.jpg" class="card-img-top" alt="Влак 2">
                         <div class="card-body">
                             <h5 class="card-title"><span class="card-title-text">Ориент Експрес</span></h5>
-                            <p class="card-text"><span class="card-text" >Ориент Експрес е символ на лукс и приключения. Първият му рейс през 1883 свързва Париж и Константинопол, и продължава да очарова и до днес. Минава през София, Пловдив, Варна и Бургас, разкривайки красотата на България.</span></p>
+                            <p class="card-text">Ориент Експрес е символ на лукс и приключения. Първият му рейс през 1883 свързва Париж и Константинопол, и продължава да очарова и до днес.</p>
                             <a href="Train 2.html" class="btn btn-dark-red btn-block">ПОВЕЧЕ ИНФОРМАЦИЯ</a>
                         </div>
                     </div>
@@ -131,9 +129,17 @@
                         <img src="novi bdz vagoni.jpeg" class="card-img-top" alt="Влак 3">
                         <div class="card-body">
                             <h5 class="card-title"><span class="card-title-text">Новите влакове на БДЖ</span></h5>
-                            <p class="card-text"><span class="card-text" >Българските държавни железници (БДЖ) внесоха нови вагони, които значително подобриха комфорта и сигурността на пътниците. Те бяха оборудвани със съвременни технологии и имат увеличена вместимост. </span></p>
+                            <p class="card-text">БДЖ внесоха нови вагони с подобрено удобство и сигурност, оборудвани със съвременни технологии и увеличена вместимост.</p>
                             <a href="Train 3.html" class="btn btn-dark-red btn-block">ПОВЕЧЕ ИНФОРМАЦИЯ</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4 text-center">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Искаш да разгледаш повече влакове?</h5>
+                        <a href="trains.html" class="btn btn-danger">Цъкни тук!</a>
                     </div>
                 </div>
             </div>
